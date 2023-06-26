@@ -26,6 +26,8 @@ private slots:
 
     void on_lstWidCont_itemClicked(QListWidgetItem *item);
 
+    void on_txtDir_textChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     AnalisisDir pathas;
