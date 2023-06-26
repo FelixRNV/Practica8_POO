@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 #include <QFileDialog>
+#include <QListWidget>
+#include <analisisdir.h>
+#include <QDir>
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,9 +21,13 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+
+    void on_btnDire_clicked();
+
+    void on_lstWidCont_itemClicked(QListWidgetItem *item);
 
 private:
     Ui::MainWindow *ui;
+    AnalisisDir pathas;
 };
 #endif // MAINWINDOW_H
